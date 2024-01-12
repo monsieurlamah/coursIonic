@@ -1,0 +1,28 @@
+/*
+  Theme Name: Hotel Managment App UI in Ionic 7
+Theme URI: https://jswebapp.com
+Author: JSWEBAPP Team
+Author URI: https://jswebapp.com
+Description: One solution for all your hotel management needs.Simplify and automate your daily hotel operations with a highly flexible and feature-rich system.
+Tags: Hotel Mangment App , Ionic  Template , Ionic 7
+Version: 1.2
+Email : santosh@jswebapp.com
+Youtube Tutorials : https://www.youtube.com/channel/UC3IX-HW44irnSEdETDZOWrA
+Facebook Page : https://www.facebook.com/jswebapp
+Pinterest : https://in.pinterest.com/gk0840/_created/
+*/
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: './home.page.html',
+  styleUrls: ['./home.page.scss'],
+})
+export class HomePage implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

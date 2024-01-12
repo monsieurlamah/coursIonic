@@ -1,0 +1,7 @@
+{
+  "name": "hotelManagmnet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

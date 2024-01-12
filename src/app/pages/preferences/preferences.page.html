@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-toolbar color='danger'>
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button color="light" defaultHref="home1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Preferences</ion-title>
+    <ion-icon name="notifications" slot="end" (click)="notificationModal($event)"></ion-icon>
+    <ion-badge id="notifications-badge-msg" color="danger">2</ion-badge>
+    <ion-icon name="cart" slot="end"></ion-icon>
+    <ion-badge id="notifications-badge" color="danger">5</ion-badge>
+    <img slot="end" src="../../../assets/001.JPG" (click)="presentModal($event)" />
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+ 
+  <div class="header">
+    <h3>What kind of food are you
+      looking for?</h3>
+    <p>You can select two or more preferences</p>
+  </div>
+  <div class="container">
+    <label class="option_item">
+      <input type="checkbox" class="checkbox">
+      <div class="option_inner facebook">
+        <div class="tickmark"></div>
+        <div class="name">Traditional American</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" checked>
+      <div class="option_inner twitter">
+        <div class="tickmark"></div>
+        <div class="name">Breakfast & Lunch</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox">
+      <div class="option_inner instagram">
+        <div class="tickmark"></div>
+        <div class="name">New Mexican</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" checked>
+      <div class="option_inner linkedin">
+        <div class="tickmark"></div>
+        <div class="name">Comfort Food</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" checked>
+      <div class="option_inner whatsapp">
+        <div class="tickmark"></div>
+        <div class="name">Wings</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox">
+      <div class="option_inner google">
+        <div class="tickmark"></div>
+        <div class="name">Sandwiches</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox" checked>
+      <div class="option_inner reddit">
+        <div class="tickmark"></div>
+        <div class="name">Burgers</div>
+      </div>
+    </label>
+    <label class="option_item">
+      <input type="checkbox" class="checkbox">
+      <div class="option_inner quora">
+        <div class="tickmark"></div>
+        <div class="name">Salads</div>
+      </div>
+    </label>
+  </div>
+  <div class="header1">
+    <ion-button (click)="next()"  expand="block">Save Preferences</ion-button>
+  </div>
+</ion-content>
